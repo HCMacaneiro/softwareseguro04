@@ -5,13 +5,13 @@ public class Album {
     private String nome;
     private ArrayList<Musica> musicas;
 
-    public Album(String genero, int ano, String nome, String artista) {
+    public Album(String nome, int ano, String artista) {
         this.ano = ano;
         this.nome = nome;
         this.musicas = new ArrayList<Musica>();
     }
 
-    public void setMusicas(ArrayList<Musica> musicas) {
-        this.musicas = musicas;
+    public void addMusicas(Musica musica) {
+        this.musicas.add(musica);
     }
 }
